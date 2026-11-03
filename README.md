@@ -4,6 +4,23 @@
 
 Visualizes 10,000+ active satellites orbiting Earth using SGP4 propagation, GPU instancing, and a Web Worker architecture.
 
+## Screenshots
+
+### Main Globe View
+![OrbitalTrack Main View](assets/main-view.jpg)
+
+Full-screen 3D Earth with color-coded satellite points, HUD controls, and real-time tracking.
+
+### Telemetry Panel
+![Telemetry HUD](assets/telemetry-panel.jpg)
+
+Live satellite telemetry (NORAD ID, altitude, velocity, lat/lon, inclination, period).
+
+### Orbital Path Visualization
+![Orbit Path](assets/orbit-path.jpg)
+
+Selected satellite with orbital path and ground track overlay.
+
 ## System Architecture
 
 ```mermaid
@@ -42,6 +59,7 @@ orbitaltrack/
 │   ├── layout.tsx
 │   ├── page.tsx
 │   └── globals.css
+├── assets/                     # Screenshots and visual assets
 ├── components/
 │   ├── GlobeScene.tsx          # R3F Canvas + Earth + InstancedMesh
 │   └── TelemetryHUD.tsx        # Search, filters, time controls, telemetry panel
